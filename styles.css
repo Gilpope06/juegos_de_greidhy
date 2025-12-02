@@ -1,0 +1,101 @@
+:root {
+  --bg: #090f1a;
+  --card: #111a2b;
+  --accent: #00d1ff;
+  --text: #e8edf5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.games-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.game-card {
+  background: var(--card);
+  width: 280px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .4);
+}
+
+.game-thumb {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  background: var(--accent);
+  color: #001c27;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn.alt {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.player-area {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.player-area.hidden {
+  display: none;
+}
+
+#game-frame {
+  width: 960px;
+  height: 600px;
+  border-radius: 10px;
+  background: black;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: #ff4a4a;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}

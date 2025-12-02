@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juegos de Greidhy</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>🎮 Juegos de Greidhy</h1>
+        <p>Haz clic en un juego para jugarlo directamente desde la web.</p>
+    </header>
+
+    <main class="games-grid">
+        <!-- Tarjeta de tu juego Unity -->
+        <div class="game-card">
+            <img src="TemplateData/favicon.ico" class="game-thumb">
+            <h2>SpaceWarSurvivor</h2>
+            <p>Juego WebGL creado en Unity.</p>
+
+            <div class="buttons">
+                <button class="btn play-btn" data-path="./">Jugar aquí</button>
+                <a class="btn alt" href="./index.html" target="_blank">Abrir en nueva pestaña</a>
+            </div>
+        </div>
+
+        <!-- Puedes duplicar esto para agregar más juegos -->
+    </main>
+
+    <!-- Zona donde se carga el juego -->
+    <section id="player-area" class="player-area hidden">
+        <button id="close-player" class="close">Cerrar</button>
+        <iframe id="game-frame" src="" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
